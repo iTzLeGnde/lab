@@ -24,8 +24,9 @@ class Test:
         self.a1.deposit(50)
         assert self.a1.withdraw(40) == True
         self.a1.deposit(40)
-        assert self.a1.withdraw(51) == False
         assert self.a1.withdraw(50) == True
+        self.a1.deposit(50)
+        assert self.a1.withdraw(51) == False
         assert self.a1.withdraw(0) == False
 
     def test_get_balance(self):
@@ -33,6 +34,12 @@ class Test:
         self.a2.deposit(20)
         assert self.a1.get_balance() == 50
         assert self.a2.get_balance() == 20
+
+    def test_get_name(self):
+        self.a1 = Account("John")
+        assert self.a1.get_name() == "John"
+        self.a1 = Account("Ahmed")
+        assert self.a1.get_name() == "Ahmed"
 
 
 
