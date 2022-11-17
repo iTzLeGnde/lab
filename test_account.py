@@ -1,1 +1,4 @@
-from account impor *
+from account import *
+
+class Test:
+    pass
