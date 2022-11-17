@@ -1,4 +1,6 @@
 from account import *
 
 class Test:
-    pass
+    def setup_method(self):
+        self.a1 = Account("Yasir")
+        self.a2 = Account("Abdul")
