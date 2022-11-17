@@ -3,7 +3,7 @@ class Account:
         self.__account_name = name
         self.__account_balance: float = 0
 
-    def deposit(self, amount: float) -> (True or False):
+    def deposit(self, amount: (float or int)) -> (True or False):
         '''
         Function to deposit specifc amount to account_balance
         :param amount: The specific amount
@@ -20,7 +20,7 @@ class Account:
         :param amount: The specific amount
         :return: True if amount withdrawn successfuly, otherwise False.
         '''
-        if amount > 0 or amount < self.__account_balance:
+        if amount > 0 or amount <= self.__account_balance:
             self.__account_balance -= amount
             return True
         else:
