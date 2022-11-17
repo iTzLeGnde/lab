@@ -16,4 +16,6 @@ class Account:
         else:
             return False
     def get_balance(self):
-        self.__account_balance.get()
+        return self.__account_balance
+    def get_name(self):
+        return self.__account_name
