@@ -14,7 +14,7 @@ class Account:
             return True
         else:
             return False
-    def withdraw(self,amount: float) -> (True or False):
+    def withdraw(self,amount: (float or int)) -> (True or False):
         '''
         Function to withdarw specifc amount from account_balance
         :param amount: The specific amount
