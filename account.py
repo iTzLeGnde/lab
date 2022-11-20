@@ -1,5 +1,9 @@
 class Account:
     def __init__(self,name: str):
+        '''
+        Constructor to create initial state of an account object.
+        :param name: The account name
+        '''
         self.__account_name = name
         self.__account_balance: float = 0
 

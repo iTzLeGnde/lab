@@ -29,6 +29,7 @@ class Test:
         assert self.a1.withdraw(50) == True
         self.a1.deposit(50)
         assert self.a1.withdraw(51) == False
+        assert self.a1.withdraw(-40) == False
         assert self.a1.withdraw(0) == False
         self.a1.deposit(5.5)
         assert self.a1.withdraw(2.25) == True
