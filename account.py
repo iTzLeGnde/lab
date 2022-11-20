@@ -1,5 +1,5 @@
 class Account:
-    def __init__(self,name: str):
+    def __init__(self,name: str) -> None:
         '''
         Constructor to create initial state of an account object.
         :param name: The account name
